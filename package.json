@@ -1,6 +1,6 @@
 {
 	"name": "vscode-splunk-search-syntax",
-	"displayName": "vscode-splunk-search-syntax",
+	"displayName": "Splunk Search Syntax Highlighter",
 	"description": "Syntax highlighting for Splunk SPL files",
 	"version": "0.0.1",
 	"engines": {
@@ -9,7 +9,10 @@
 	"categories": [
 		"Programming Languages"
 	],
-	"main": "./out/extension.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/arcsector/vscode-splunk-search-syntax.git"
+	},
 	"icon": "assets/icon.png",
 	"galleryBanner": {
 		"color": "#1e1e1e",
@@ -18,21 +21,24 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "Splunksearch",
+				"id": "splunk",
 				"aliases": [
 					"spl",
 					"SPL",
-					"SplunkSPL"
+					"splunk"
 				],
 				"configuration": "./language-configuration.json",
-				"extensions": ["Splunksearch"]
+				"extensions": [
+					".spl",
+					".splunk"
+				]
 			}
 		],
 		"grammars": [
 			{
-				"language": "Splunksearch",
-				"scopeName": "source.splunksearch",
-				"path": "./syntaxes/splunksearch.tmLanguage.json"
+				"language": "splunk",
+				"scopeName": "source.splunk",
+				"path": "./syntaxes/splunk.tmLanguage"
 			}
 		]
 	}
