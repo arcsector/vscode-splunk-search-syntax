@@ -24,9 +24,17 @@
 			<key>comment</key>
 			<string>Splunk Eval function</string>
 			<key>match</key>
-			<string>\b(abs|acos|acosh|asin|asinh|atan|atan2|atanh|case|cidrmatch|ceiling|coalesce|commands|cos|cosh|exact|exp|false|floor|hypot|if|in|isbool|isint|isnotnull|isnull|isnum|isstr|len|like|ln|log|lower|ltrim|match|max|md5|min|mvappend|mvcount|mvdedup|mvfilter|mvfind|mvindex|mvjoin|mvrange|mvsort|mvzip|now|null|nullif|pi|pow|printf|random|relative_time|replace|round|rtrim|searchmatch|sha1|sha256|sha512|sigfig|sin|sinh|spath|split|sqrt|strftime|strptime|substr|tan|tanh|time|tonumber|tostring|trim|true|typeof|upper|urldecode|validate)\b</string>
+			<string>\b(abs|acos|acosh|asin|asinh|atan|atan2|atanh|case|cidrmatch|ceiling|coalesce|commands|cos|cosh|exact|exp|floor|hypot|if|in|isbool|isint|isnotnull|isnull|isnum|isstr|len|like|ln|log|lower|ltrim|match|max|md5|min|mvappend|mvcount|mvdedup|mvfilter|mvfind|mvindex|mvjoin|mvrange|mvsort|mvzip|now|null|nullif|pi|pow|printf|random|relative_time|replace|round|rtrim|searchmatch|sha1|sha256|sha512|sigfig|sin|sinh|spath|split|sqrt|strftime|strptime|substr|tan|tanh|time|tonumber|tostring|trim|typeof|upper|urldecode|validate)\b</string>
 			<key>name</key>
-			<string>support.class.splunk</string>
+			<string>support.function.splunk</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Splunk Stats function</string>
+			<key>match</key>
+			<string>\b(avg|count|distinct_count|estdc|estdc_error|max|mean|median|min|mode|percentile|range|stdev|stdevp|sum|sumsq|var|varp|first|last|list|values|earliest|earliest_time|latest|latest_time|per_day|per_hour|per_minute|per_second|rate)\b</string>
+			<key>name</key>
+			<string>support.function.splunk</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -56,15 +64,15 @@
 			<key>match</key>
 			<string>\|</string>
 			<key>name</key>
-			<string>constant.language.splunk</string>
+			<string>keyword.operator.splunk</string>
 		</dict>
 		<dict>
 			<key>comment</key>
 			<string>Splunk Operators</string>
 			<key>match</key>
-			<string>\b(AND|OR|as|by)\b</string>
+			<string>\b(AND|OR|as|by|NOT|true|false)\b</string>
 			<key>name</key>
-			<string>keyword.operator.splunk</string>
+			<string>constant.language.splunk</string>
 		</dict>
 		<dict>
 			<key>comment</key>
