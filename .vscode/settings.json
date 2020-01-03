@@ -1,0 +1,24 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "constant.language.splunk",
+        "settings":{
+          "foreground": "#F58220"
+        }
+      },
+      {
+        "scope": "support.function.splunk",
+        "settings":{
+          "foreground": "#CF00CF"
+        }
+      },
+      {
+        "scope": "support.class.splunk",
+        "settings":{
+          "foreground": "#2662FD"
+        }
+      }
+    ]
+  }
+}

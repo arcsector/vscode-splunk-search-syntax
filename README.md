@@ -15,5 +15,5 @@ Main repo for vscode splunk syntax highlighting.
 - [X] Highlight macros
 - [ ] Highlight command options
   - For example, stats has the parameter partitions=X, partitions should be highlighted in this instance only after the = sign has been placed
-- [ ] Highlight variables after eval functions
+- [X] Highlight variables after eval functions
 - [ ] Publish to VSCE Marketplace

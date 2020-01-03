@@ -38,7 +38,10 @@
 			{
 				"language": "splunk",
 				"scopeName": "source.splunk",
-				"path": "./syntaxes/splunk.tmLanguage"
+				"path": "./syntaxes/splunk.tmLanguage",
+				"embeddedLanguages": {
+					"meta.embedded.block.sql": "mysql"
+				}
 			}
 		]
 	}
