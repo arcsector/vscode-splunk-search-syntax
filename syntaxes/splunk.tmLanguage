@@ -31,7 +31,7 @@
         <key>comment</key>
         <string>Splunk Transforming functions</string>
         <key>match</key>
-        <string>(?&lt;=chart|timechart|stats|eventstats|streamstats)([\s]*)\b(avg|count|distinct_count|estdc|estdc_error|max|mean|median|min|mode|percentile|range|stdev|stdevp|sum|sumsq|var|varp|first|last|list|values|earliest|earliest_time|latest|latest_time|per_day|per_hour|per_minute|per_second|rate)\b</string>
+        <string>(?&lt;=chart|timechart|stats|eventstats|streamstats)([\s]*)\b(avg|count|distinct_count|estdc|estdc_error|eval|max|mean|median|min|mode|percentile|range|stdev|stdevp|sum|sumsq|var|varp|first|last|list|values|earliest|earliest_time|latest|latest_time|per_day|per_hour|per_minute|per_second|rate)\b</string>
         <key>name</key>
         <string>support.function.splunk</string>
       </dict>
@@ -69,7 +69,7 @@
         <key>comment</key>
         <string>Splunk Operators</string>
         <key>match</key>
-        <string>(?i)\b(as|by|or|and)\b|(?-i)\b(NOT|true|false)\b</string>
+        <string>(?i)\b(as|by|or|and|over|where)\b|(?-i)\b(NOT|true|false)\b</string>
         <key>name</key>
         <string>constant.language.splunk</string>
       </dict>

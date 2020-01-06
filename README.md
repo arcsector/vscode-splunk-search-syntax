@@ -16,4 +16,6 @@ Main repo for vscode splunk syntax highlighting.
 - [ ] Highlight command options
   - For example, stats has the parameter partitions=X, partitions should be highlighted in this instance only after the = sign has been placed
 - [X] Highlight variables after eval functions
+- [X] DBConnect Command highlighting
+- [X] SQL Highlighting in `dbxquery` with `query=`
 - [ ] Publish to VSCE Marketplace
