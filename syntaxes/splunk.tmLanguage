@@ -67,9 +67,9 @@
       </dict>
       <dict>
         <key>comment</key>
-        <string>Splunk Operators</string>
+        <string>Splunk Language Constants</string>
         <key>match</key>
-        <string>(?i)\b(as|by|or|and|over|where)\b|(?-i)\b(NOT|true|false)\b</string>
+        <string>(?i)\b(as|by|or|and|over|where|output|outputnew)\b|(?-i)\b(NOT|true|false)\b</string>
         <key>name</key>
         <string>constant.language.splunk</string>
       </dict>
