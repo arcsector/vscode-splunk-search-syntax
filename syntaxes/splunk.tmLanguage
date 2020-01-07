@@ -36,20 +36,12 @@
         <string>support.function.splunk</string>
       </dict>
       <dict>
-        <key>captures</key>
-        <dict>
-          <key>1</key>
-          <dict>
-            <key>name</key>
-            <string>support.class.splunk</string>
-          </dict>
-        </dict>
         <key>comment</key>
         <string>Splunk Macro Names</string>
         <key>match</key>
-        <string>(?<=\`)[\w]+(?=\()</string>
+        <string>(?&lt;=\`)[\w]+(?=\()</string>
         <key>name</key>
-        <string>entity.name.function</string>
+        <string>entity.name.function.splunk</string>
       </dict>
       <dict>
         <key>comment</key>
@@ -61,9 +53,17 @@
       </dict>
       <dict>
         <key>comment</key>
-        <string>Splunk Pipe</string>
+        <string>Escape Characters</string>
         <key>match</key>
-        <string>\|</string>
+        <string>(\\\\|\\\||\\\*|\\\=)</string>
+        <key>name</key>
+        <string>contant.character.escape.splunk</string>
+      </dict>
+      <dict>
+        <key>comment</key>
+        <string>Splunk Operators</string>
+        <key>match</key>
+        <string>(\|,)</string>
         <key>name</key>
         <string>keyword.operator.splunk</string>
       </dict>
@@ -79,9 +79,17 @@
         <key>comment</key>
         <string>Splunk Macro Parameters</string>
         <key>match</key>
-        <string>(?&lt;=\().*(?=\))</string>
+        <string>(?&lt;=\()([\'\"\w\,\s]+)(?=\))</string>
         <key>name</key>
-        <string>variable.parameter</string>
+        <string>variable.parameter.splunk</string>
+      </dict>
+      <dict>
+        <key>comment</key>
+        <string>Splunk Variables</string>
+        <key>match</key>
+        <string>([\w\.]+)(\[\]|\{\})?([\s]*)(?=\=)</string>
+        <key>name</key>
+        <string>variable.splunk</string>
       </dict>
       <dict>
         <key>comment</key>
@@ -109,7 +117,7 @@
       </dict>
       <dict>
         <key>begin</key>
-        <string>.*query="</string>
+        <string>query=\"</string>
         <key>end</key>
         <string>(?&lt;!\\)"</string>
         <key>name</key>
