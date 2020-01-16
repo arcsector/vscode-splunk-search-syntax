@@ -9,15 +9,50 @@ Main repo for vscode splunk syntax highlighting
 - Autocompletes macro ticks and brackets as well as quotes
 - Highlights strings, parameters, arguments, macro names, and keywords
 
+<img src="https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/.github/vscode_splunk_highlighting-Noctis_High_Contrast.png">
+
+
+<img src="https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/.github/vscode_splunk_highlighting-default.png">
+
 ## How to install
 
 ### Install from Source
 
-Install from source by downloading this repo and unzipping into your vscode extensions directory (ususally ~/.vscode/extensions)
+Install from source by downloading this repo and unzipping into your vscode extensions directory (ususally `~/.vscode/extensions`)
 
 ### Install in Visual Studio Code directly
 
 Install directly in visual studio by going to the extensions tab and searching for `"splunk search"`. The quotes are imperative as the words are normally not treated as a phrase. Click the `Install` button on the  extension with the same name as this README and you're good to go.
+
+## How to change splunk colors
+
+You can try and use the following JSON blob:
+```json
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "constant.language.splunk",
+        "settings":{
+          "foreground": "#F58220"
+        }
+      },
+      {
+        "scope": "support.function.splunk",
+        "settings":{
+          "foreground": "#CF00CF"
+        }
+      },
+      {
+        "scope": "support.class.splunk",
+        "settings":{
+          "foreground": "#2662FD"
+        }
+      }
+    ]
+  }
+}
+```
 
 ## TODO
 
@@ -30,5 +65,5 @@ Install directly in visual studio by going to the extensions tab and searching f
 - [X] DBConnect Command highlighting
 - [ ] SQL Highlighting in `dbxquery` with `query=`
 - [X] Publish to VSCE Marketplace
-- [ ] Change highlighting color to match Splunk search bar
+- [X] Change highlighting color to match Splunk search bar (manually)
   - Not sure if this is going to happen or not, as there is a need to stick to [Textmate Naming Conventions](https://macromates.com/manual/en/language_grammars#naming_conventions)
