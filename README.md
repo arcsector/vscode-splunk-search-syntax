@@ -2,6 +2,8 @@
 
 Main repo for vscode splunk syntax highlighting
 
+<img src="https://img.shields.io/badge/Downloads-100%2B-green">
+
 ## Features
 
 - Language auto-recognition and highlighting associated with `.spl` and `.splunk` files
