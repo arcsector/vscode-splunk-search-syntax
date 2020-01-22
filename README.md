@@ -1,8 +1,8 @@
 # Splunk Search Syntax Highlighter VSCode Extension README
 
-Main repo for vscode splunk syntax highlighting
-
 <img src="https://img.shields.io/badge/Downloads-100%2B-green">
+
+Main repo for vscode splunk syntax highlighting
 
 ## Features
 
