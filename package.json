@@ -29,7 +29,8 @@
 				"aliases": [
 					"spl",
 					"SPL",
-					"splunk"
+					"splunk",
+					"splunk_search"
 				],
 				"configuration": "./language-configuration.json",
 				"extensions": [
