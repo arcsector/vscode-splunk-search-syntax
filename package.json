@@ -25,7 +25,7 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "splunk",
+				"id": "splunk_search",
 				"aliases": [
 					"spl",
 					"SPL",
@@ -40,7 +40,7 @@
 		],
 		"grammars": [
 			{
-				"language": "splunk",
+				"language": "splunk_search",
 				"scopeName": "source.splunk",
 				"path": "./syntaxes/splunk.tmLanguage",
 				"embeddedLanguages": {
