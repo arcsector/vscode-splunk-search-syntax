@@ -41,8 +41,8 @@
 		"grammars": [
 			{
 				"language": "splunk_search",
-				"scopeName": "source.splunk",
-				"path": "./syntaxes/splunk.tmLanguage",
+				"scopeName": "source.splunk_search",
+				"path": "./syntaxes/splunk_search.tmLanguage",
 				"embeddedLanguages": {
 					"meta.embedded.block.sql": "sql"
 				}
