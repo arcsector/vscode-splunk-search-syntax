@@ -19,6 +19,9 @@
 		"color": "#1e1e1e",
 		"theme": "dark"
 	},
+	"extensionPack": [
+		"arcsector.vscode-splunk-search-linter"
+	],
 	"contributes": {
 		"languages": [
 			{
