@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2020-01-24
+
+### Changed
+
+- Moving scope to `splunk_search` instead of `splunk` in order to be compatible with official Splunk Extension
+- Moving to `NOT`'s in Macro params helped to solve TODO task for this
+
 ## [1.0.3] - 2020-01-06
 
 ### Added
