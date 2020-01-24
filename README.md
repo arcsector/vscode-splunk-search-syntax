@@ -34,19 +34,19 @@ You can try and use the following JSON blob:
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "constant.language.splunk",
+        "scope": "constant.language.splunk_search",
         "settings":{
           "foreground": "#F58220"
         }
       },
       {
-        "scope": "support.function.splunk",
+        "scope": "support.function.splunk_search",
         "settings":{
           "foreground": "#CF00CF"
         }
       },
       {
-        "scope": "support.class.splunk",
+        "scope": "support.class.splunk_search",
         "settings":{
           "foreground": "#2662FD"
         }

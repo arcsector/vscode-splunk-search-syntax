@@ -2,7 +2,7 @@
 	"name": "vscode-splunk-search-syntax",
 	"displayName": "Splunk Search Syntax Highlighter",
 	"description": "Syntax highlighting for Splunk SPL files",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"publisher": "arcsector",
 	"engines": {
 		"vscode": "^1.41.0"
@@ -19,6 +19,9 @@
 		"color": "#1e1e1e",
 		"theme": "dark"
 	},
+	"extensionPack": [
+		"arcsector.vscode-splunk-search-linter"
+	],
 	"contributes": {
 		"languages": [
 			{
@@ -26,7 +29,8 @@
 				"aliases": [
 					"spl",
 					"SPL",
-					"splunk"
+					"splunk",
+					"splunk_search"
 				],
 				"configuration": "./language-configuration.json",
 				"extensions": [
@@ -38,8 +42,8 @@
 		"grammars": [
 			{
 				"language": "splunk_search",
-				"scopeName": "source.splunk",
-				"path": "./syntaxes/splunk.tmLanguage",
+				"scopeName": "source.splunk_search",
+				"path": "./syntaxes/splunk_search.tmLanguage",
 				"embeddedLanguages": {
 					"meta.embedded.block.sql": "sql"
 				}
