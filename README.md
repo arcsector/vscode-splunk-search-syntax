@@ -62,10 +62,12 @@ You can try and use the following JSON blob:
 - [X] Highlight macros
 - [X] Highlight macro and eval command parameters/arguments
 - [X] Highlight command options
-  - For example, stats has the parameter partitions=X, partitions should be highlighted in this instance only after the = sign has been placed
+  - For example, stats has the parameter `partitions=X`, `partitions` should be highlighted in this instance only after the `=` sign has been placed
 - [X] Highlight variables after eval functions
 - [X] DBConnect Command highlighting
 - [ ] SQL Highlighting in `dbxquery` with `query=`
 - [X] Publish to VSCE Marketplace
 - [X] Change highlighting color to match Splunk search bar (manually)
   - Not sure if this is going to happen or not, as there is a need to stick to [Textmate Naming Conventions](https://macromates.com/manual/en/language_grammars#naming_conventions)
+- [X] Allow params to be highlighted after nested eval functions
+  - For example, in the command `| eval info=if(isnull(info),"N/A",info)`, currently the third `info` is not highlighted. This should be changed as the parameter is valid. The issue is that we need a recursive strategy for highlighting these params, but regular expressions don't have built-in recursive functionality. This may never happen
