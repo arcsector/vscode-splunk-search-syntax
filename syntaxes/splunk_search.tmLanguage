@@ -79,7 +79,7 @@
         <key>comment</key>
         <string>Splunk Macro Parameters</string>
         <key>match</key>
-        <string>([^\(\)\",=\']+)(?=\)|,)</string>
+        <string>(?<=\(|,|[^=]\s{300})([^\(\)\",=]+)(?=\)|,)</string>
         <key>name</key>
         <string>variable.parameter.splunk_search</string>
       </dict>
