@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.5] - 2020-01-06
+
+### Added
+
+- Snippets
+
+### Changed
+
+- Macro param highlighting versus eval params
+
 ## [1.2.1] - 2020-01-24
 
 ### Changed
