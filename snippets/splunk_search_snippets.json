@@ -1,0 +1,37 @@
+{
+    "Stats Count": {
+        "prefix": ["|stats ", "| stats "],
+        "body": ["| stats count by ${1:name} \n| sort - count"],
+        "description": "Standard stats count syntax for a single column"
+    },
+    "Lookup and Output": {
+        "prefix": ["|lookup ", "| lookup "],
+        "body": ["| lookup ${1:lookup_name} ${2:lookup_field} AS ${3:event_field} OUTPUT ${4:lookup_new_field} AS {$5:lookup_new_field_name}"],
+        "description": "Standard lookup syntax for a single column"
+    },
+    "Chart Count": {
+        "prefix": ["|chart ", "| chart "],
+        "body": ["| chart count by ${1:name} \n| sort - count"],
+        "description": "Standard chart count syntax for a single column"
+    },
+    "DB query": {
+        "prefix": ["|dbxquery ", "| dbxquery "],
+        "body": ["| dbxquery query=\"${1:SELECT * FROM db.table}\" connection=${2:connection_name}"],
+        "description": "Standard dbxquery syntax for a database with a connection"
+    },
+    "Timechart Count": {
+        "prefix": ["|timechart ", "| timechart "],
+        "body": ["| timechart count by ${1:name}"],
+        "description": "Standard timechart count syntax for a single column"
+    },
+    "Sendemail": {
+        "prefix": ["|sendemail ", "| sendemail "],
+        "body": ["| sendemail from=${1:from_addr} to=\"${2:to_addr_comma_separated}\" subject=\"${3:subject}\" message=\"${4:message}\" sendresults=true sendcsv=true inline=true use_tls=true"],
+        "description": "Sendemail syntax for secure emails with TLS, CSV attachment, and inline email body results"
+    },
+    "Foreach": {
+        "prefix": ["|foreach ", "| foreach "],
+        "body": ["| foreach ${1:*.*} [${2:eval total=total + <<FIELD>>}]"],
+        "description": "Foreach syntax to match all fields; <<FIELD>> is a variable reserved by foreach which is the name of the field currently being iterated on"
+    }
+}
