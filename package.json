@@ -50,15 +50,15 @@
 				}
 			},
 			{
-                "scopeName": "markdown.splunk_search.codeblock",
-                "path": "./syntaxes/splunk_searchcodeblock.json",
-                "injectTo": [
-                    "text.html.markdown"
-                ],
-                "embeddedLanguages": {
-                    "meta.embedded.block.splunk_search": "splunk_search"
-                }
-            }
+				"scopeName": "markdown.splunk_search.codeblock",
+				"path": "./syntaxes/splunk_searchcodeblock.json",
+				"injectTo": [
+					"text.html.markdown"
+                		],
+				"embeddedLanguages": {
+				    "meta.embedded.block.splunk_search": "splunk_search"
+				}
+		}
 		],
 		"snippets": [
 			{
