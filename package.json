@@ -48,7 +48,17 @@
 				"embeddedLanguages": {
 					"meta.embedded.block.sql": "sql"
 				}
-			}
+			},
+			{
+				"scopeName": "markdown.splunk_search.codeblock",
+				"path": "./syntaxes/splunk_searchcodeblock.json",
+				"injectTo": [
+					"text.html.markdown"
+                		],
+				"embeddedLanguages": {
+				    "meta.embedded.block.splunk_search": "splunk_search"
+				}
+		}
 		],
 		"snippets": [
 			{
@@ -56,5 +66,15 @@
 				"path": "./snippets/splunk_search_snippets.json"
 			}
 		]
+	},
+	"__metadata": {
+		"id": "1938b0e4-e8ca-4c73-b10a-cd715816a50c",
+		"publisherId": "ec8aa3bb-c55d-4e99-ad21-5621f095da29",
+		"publisherDisplayName": "arcsector",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1654925390932
 	}
 }

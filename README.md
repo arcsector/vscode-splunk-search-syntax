@@ -20,7 +20,10 @@ Main repo for vscode splunk syntax highlighting
 
 ### Install from Source
 
-Install from source by downloading this repo and unzipping into your vscode extensions directory (ususally `~/.vscode/extensions`)
+Install from source by downloading this repo and unzipping into your vscode extensions directory. The default directories are ususally, 
+
+- Linux/macOS `~/.vscode/extensions`
+- Windows `%USERPROFILE%\.vscode\extensions`
 
 ### Install in Visual Studio Code directly
 
