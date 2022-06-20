@@ -7,14 +7,17 @@ Main repo for vscode splunk syntax highlighting
 ## Features
 
 - Language auto-recognition and highlighting associated with `.spl` and `.splunk` files
+- Markdown code block highlighting for `.md` files using ` ```spl` to open the code block 
 - Highlights main search, stats, and eval functions, as well as escape keys
 - Autocompletes macro ticks and brackets as well as quotes
 - Highlights strings, parameters, arguments, macro names, and keywords
 
-<img src="https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/.github/vscode_splunk_highlighting-Noctis_High_Contrast.png">
 
+![Syntax highlighting in VS Code Noctis high contrast editor](.github/vscode_splunk_highlighting-Noctis_High_Contrast.png)
 
-<img src="https://raw.githubusercontent.com/arcsector/vscode-splunk-search-syntax/master/.github/vscode_splunk_highlighting-default.png">
+![Syntax highlighting in VS Code editor](.github/vscode_splunk_highlighting-default.png)
+
+![Markdown code block syntax highlighting example in VS Code Editor](.github/vscode_splunk_highlighting-markdown-code-block.png)
 
 ## How to install
 
