@@ -123,6 +123,14 @@
         <key>name</key>
         <string>meta.embedded.block.sql</string>
       </dict>
+      <dict>
+        <key>begin</key>
+        <string>(?&lt;!\\)```</string>
+        <key>end</key>
+        <string>(?&lt;!\\)```</string>
+        <key>name</key>
+        <string>comment.block.splunk_search</string>
+      </dict>
     </array>
     <key>scopeName</key>
     <string>source.splunk_search</string>
