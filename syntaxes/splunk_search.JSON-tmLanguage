@@ -74,6 +74,11 @@
       "begin": "query=\\\"",
       "end": "(?<!\\\\)\"",
       "name": "meta.embedded.block.sql"
+    },
+    {
+      "begin": "(?<!\\\\)```",
+      "end": "(?<!\\\\)```",
+      "name": "comment.block.splunk_search"
     }
   ],
   "scopeName": "source.splunk_search"
