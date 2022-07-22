@@ -131,6 +131,14 @@
         <key>name</key>
         <string>comment.block.splunk_search</string>
       </dict>
+      <dict>
+        <key>begin</key>
+        <string>`comment\("</string>
+        <key>end</key>
+        <string>"\)`</string>
+        <key>name</key>
+        <string>comment.block.splunk_search</string>
+      </dict>
     </array>
     <key>scopeName</key>
     <string>source.splunk_search</string>
