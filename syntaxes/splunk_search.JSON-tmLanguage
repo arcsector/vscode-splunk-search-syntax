@@ -79,7 +79,11 @@
       "begin": "(?<!\\\\)```",
       "end": "(?<!\\\\)```",
       "name": "comment.block.splunk_search"
-    }
+    },
+    {
+      "begin": "`comment\\(",
+      "end": "\\)`",
+      "name": "comment.block.splunk_search"
   ],
   "scopeName": "source.splunk_search"
 }
